@@ -1,6 +1,6 @@
 ## Deployed Site Link
 
-https://cryptocurrtryout.netlify.app
+cryptocurrwebapp.netlify.app
 
 # Getting Started with Create React App
 
