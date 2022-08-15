@@ -71,8 +71,8 @@ const Navbar = () => {
               Cryptocurrencis
             </Link>
           </Menu.Item>
+          {/*<Link
           <Menu.Item icon={<MoneyCollectOutlined />}>
-            <Link
               onClick={() => {
                 if (screenSize <= 800) {
                   setActiveMenu(!activeMenu);
@@ -81,8 +81,8 @@ const Navbar = () => {
               to="/exchanges"
             >
               Exchanges
-            </Link>
-          </Menu.Item>
+              </Menu.Item>
+            </Link>*/}
           <Menu.Item icon={<BulbOutlined />}>
             <Link
               onClick={() => {
