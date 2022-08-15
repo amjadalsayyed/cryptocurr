@@ -24,7 +24,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    if (screenSize < 768) {
+    if (screenSize <= 800) {
       setActiveMenu(false);
     } else {
       setActiveMenu(true);
@@ -48,22 +48,50 @@ const Navbar = () => {
       {activeMenu && (
         <Menu theme="dark">
           <Menu.Item icon={<HomeOutlined />}>
-            <Link onClick={() => setActiveMenu(!activeMenu)} to="/">
+            <Link
+              onClick={() => {
+                if (screenSize <= 800) {
+                  setActiveMenu(!activeMenu);
+                }
+              }}
+              to="/"
+            >
               Home
             </Link>
           </Menu.Item>
           <Menu.Item icon={<FundOutlined />}>
-            <Link onClick={() => setActiveMenu(!activeMenu)} to="/cryptocurr">
+            <Link
+              onClick={() => {
+                if (screenSize <= 800) {
+                  setActiveMenu(!activeMenu);
+                }
+              }}
+              to="/cryptocurr"
+            >
               Cryptocurrencis
             </Link>
           </Menu.Item>
           <Menu.Item icon={<MoneyCollectOutlined />}>
-            <Link onClick={() => setActiveMenu(!activeMenu)} to="/exchanges">
+            <Link
+              onClick={() => {
+                if (screenSize <= 800) {
+                  setActiveMenu(!activeMenu);
+                }
+              }}
+              to="/exchanges"
+            >
               Exchanges
             </Link>
           </Menu.Item>
           <Menu.Item icon={<BulbOutlined />}>
-            <Link onClick={() => setActiveMenu(!activeMenu)} to="/news">
+            <Link
+              onClick={() => {
+                if (screenSize <= 800) {
+                  setActiveMenu(!activeMenu);
+                }
+              }}
+              to="/news"
+            >
               News
             </Link>
           </Menu.Item>
